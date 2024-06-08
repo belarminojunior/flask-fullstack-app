@@ -59,10 +59,10 @@ def delete_contact(user_id):
 
     if not contact:
         return jsonify({"message": "User Not Found"}), 400
-    
+
     db.session.delete(contact)
     db.session.commit()
-    
+
     return jsonify({"message": "User Deleted!"}), 200
 
 
