@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import ContactList from "./ContactList";
 import ContactForm from "./ContactForm";
 
@@ -39,7 +38,8 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="container">
+      <h1>Contact Management</h1>
       <ContactList
         contacts={contacts}
         updateContact={openEditModal}
@@ -59,7 +59,7 @@ const App = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
